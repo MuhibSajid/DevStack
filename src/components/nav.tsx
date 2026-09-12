@@ -2,7 +2,7 @@ import Logo from "../assets/logo-text.png";
 
 const Nav = () => {
   return (
-    <nav className="flex justify-between items-center container mx-auto p-4 border-b border-gray-200">
+    <nav className="flex justify-between items-center container mx-auto p-3 border-b border-gray-200">
       <img src={Logo} alt="DevStack" className="h-8 w-auto" />
       <ul className="flex gap-6 items-center text-sm text-gray-700">
         <li className=" first:text-pink-600 hover:text-pink-600 cursor-pointer transition-colors">
