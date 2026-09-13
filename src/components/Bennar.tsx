@@ -7,7 +7,7 @@ const Bennar = () => {
         <section className="max-w-xl text-center lg:text-left">
           <h1 className="text-4xl font-extrabold leading-tight tracking-tight sm:text-5xl">
             Build Your Ideal{" "}
-            <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-orange-500 via-pink-500 to-purple-600 bg-clip-text text-transparent">
               Development Stack
             </span>
           </h1>
@@ -19,7 +19,7 @@ const Bennar = () => {
           </p>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4 lg:justify-start">
-            <button className="rounded-md bg-gradient-to-r from-orange-500 to-pink-500 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-pink-500/20 transition hover:opacity-90">
+            <button className="rounded-md bg-linear-to-r from-orange-500 to-pink-500 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-pink-500/20 transition hover:opacity-90">
               Explore Technologies
             </button>
             <button className="rounded-md border border-slate-200 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:bg-slate-50">
