@@ -1,12 +1,17 @@
-import { useState } from "react";
+import { toast } from "react-toastify";
 import type { TechnoTypes } from "../types/TechnoTypes";
 
 interface TechnoCardProps {
   tech: TechnoTypes;
+  isSelected: boolean;
+  onAdd: () => void;
 }
 
-const TechnoCard = ({ tech }: TechnoCardProps) => {
-  const [isSelected, setIsSelected] = useState(false);
+const TechnoCard = ({ tech, isSelected, onAdd }: TechnoCardProps) => {
+  const handleSelectedTechno = () => {
+    onAdd();
+    toast.success(`${tech.name} added to your stack!`);
+  };
 
   return (
     <div className="border border-gray-200 rounded-xl p-4 flex flex-col gap-3">
@@ -29,7 +34,7 @@ const TechnoCard = ({ tech }: TechnoCardProps) => {
       </div>
 
       <button
-        onClick={() => setIsSelected((prev) => !prev)}
+        onClick={handleSelectedTechno}
         className="btn btn-neutral rounded-xl"
         disabled={isSelected}
       >
