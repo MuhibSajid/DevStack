@@ -29,12 +29,15 @@
   ***
   3. What does the `useState` hook do, and where did you use it in this project?
 
+  `useState` is a React Hook that allows a component to remember and update data—known as "state"—that persists even after a re-render.
+  I have used it in `TechnoItem.tsx`.
+
 ---
 
 ---
 
 4. What does the `useEffect` hook do, and why did you need it to load the JSON data?
-   -- A React hook that can be used to run side effects inside a component.
+   -- A React hook that can be used to run side effects inside a component.....
 
 ---
 
@@ -43,14 +46,19 @@
 
 ---
 
-6. What is conditional rendering? Show one place you used it (example: the empty stack message).
-
----
+6. What is conditional rendering? Show one place you used it (example: the empty
+   stack message).
+   --Conditional rendering means displaying different UI elements based on specific conditions.
+   I have used it in YourStack.tsx
+   "<p className="text-sm text-gray-400 mt-1 mb-4">
+   {stack.length} {stack.length === 1 ? "Technology" : "Technologies"}{" "}
+   Selected
+    </p>"
 
 ---
 
 7.  How do you pass data from a parent component to a child component, and how  
     does a child send something back to the parent?
-    --Sending data from Parent to Child and back from Child to Parent.The parent component sends data to the child as props. This is a one-way data flow — from top to bottom.
+    by `useState` .
 
 ---
