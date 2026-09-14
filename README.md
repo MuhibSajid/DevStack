@@ -16,23 +16,23 @@
   -- 2. Add Stack.
   -- 3. Explore the Technologies.
 
-- Also answer these React questions at the end of your Readme (write the answers in your own words, short and simple):
-  1. What is JSX, and why is it used in React?
+- Also answer these React questions at the end of your Readme (write the answers in
+  your own words, short and simple):
 
-  --JSX (JavaScript XML) is a syntax extension to JavaScript that looks a lot like HTML, but is actually written within JavaScript code. It is used to describe the UI in React.
+1. What is JSX, and why is it used in React?
 
-  ***
-  2. What is the difference between props and state?
-     -- Props is data passed from the parent component to the child component. They work much like parameters to a function.
-     & state is component own, internal data, which can change over time and causes the component to re-render.
+   --JSX (JavaScript XML) is a syntax extension to JavaScript that looks a lot like HTML, but is actually written within JavaScript code. It is used to describe the UI in React.
 
-  ***
-  3. What does the `useState` hook do, and where did you use it in this project?
+   ***
 
-  `useState` is a React Hook that allows a component to remember and update data—known as "state"—that persists even after a re-render.
-  I have used it in `TechnoItem.tsx`.
+2. What is the difference between props and state?
+   -- Props is data passed from the parent component to the child component. They work much like parameters to a function.
+   & state is component own, internal data, which can change over time and causes the component to re-render.
 
----
+3. What does the `useState` hook do, and where did you use it in this project?
+
+`useState` is a React Hook that allows a component to remember and update data—known as "state"—that persists even after a re-render.
+I have used it in `TechnoItem.tsx`.
 
 ---
 
