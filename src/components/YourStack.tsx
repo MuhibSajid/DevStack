@@ -1,4 +1,5 @@
 import type { TechnoTypes } from "../types/TechnoTypes";
+import { toast } from "react-toastify";
 
 interface YourStackProps {
   stack: TechnoTypes[];
@@ -23,7 +24,8 @@ const YourStack = ({ stack, onRemove, onRemoveAll }: YourStackProps) => {
       ) : (
         <>
           <p className="text-sm text-gray-400 mt-1 mb-4">
-            {stack.length} Technology Selected
+            {stack.length} {stack.length === 1 ? "Technology" : "Technologies"}{" "}
+            Selected
           </p>
 
           <div className="flex flex-col gap-3">
@@ -42,7 +44,11 @@ const YourStack = ({ stack, onRemove, onRemoveAll }: YourStackProps) => {
                   </div>
                 </div>
                 <button
-                  onClick={() => onRemove(tech.id)}
+                  type="button"
+                  onClick={() => {
+                    onRemove(tech.id);
+                    toast.info(`${tech.name} removed from your stack.`);
+                  }}
                   className="text-gray-400 hover:text-gray-600 text-lg leading-none"
                   aria-label={`Remove ${tech.name}`}
                 >
@@ -53,7 +59,11 @@ const YourStack = ({ stack, onRemove, onRemoveAll }: YourStackProps) => {
           </div>
 
           <button
-            onClick={onRemoveAll}
+            type="button"
+            onClick={() => {
+              onRemoveAll();
+              toast.info("All technologies removed from your stack.");
+            }}
             className="mt-6 w-full border border-red-200 text-red-500 font-semibold rounded-xl py-2 hover:bg-red-50"
           >
             Remove All

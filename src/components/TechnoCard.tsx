@@ -14,7 +14,9 @@ const TechnoCard = ({ tech, isSelected, onAdd }: TechnoCardProps) => {
   };
 
   return (
-    <div className="border border-gray-200 rounded-xl p-4 flex flex-col gap-3">
+    <div
+      className={`border ${isSelected ? "border-red-400" : "border-gray-200"}  rounded-xl p-4 flex flex-col gap-3 `}
+    >
       <div className="flex justify-between items-start">
         <img src={tech.icon} alt={tech.name} className="w-9 h-9" />
         <span className="text-xs font-medium bg-blue-50 text-blue-600 px-2 py-1 rounded-full">
