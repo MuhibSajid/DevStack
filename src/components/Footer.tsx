@@ -1,0 +1,118 @@
+const Footer = () => {
+  return (
+    <footer className="bg-white border-t border-gray-100">
+      <div className="container mx-auto px-5 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
+          {/* Brand */}
+          <div className="md:col-span-1">
+            <div className="flex items-center gap-2 mb-3">
+              <span className="w-7 h-7 flex items-center justify-center rounded-md bg-gradient-to-br from-pink-500 to-purple-600 text-white text-xs font-bold">
+                DS
+              </span>
+              <span className="font-bold text-gray-900">
+                Dev <span className="text-pink-500">Stack</span>
+              </span>
+            </div>
+            <p className="text-sm text-gray-400 mb-4">
+              Curated tools, technologies, and resources for developers building
+              modern software.
+            </p>
+            <div className="flex gap-4 text-sm text-gray-500">
+              <a href="#" className="hover:text-gray-900">
+                GitHub
+              </a>
+              <a href="#" className="hover:text-gray-900">
+                Twitter
+              </a>
+              <a href="#" className="hover:text-gray-900">
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          {/* Product */}
+          <div>
+            <h4 className="text-xs font-semibold text-gray-900 tracking-wide mb-4">
+              PRODUCT
+            </h4>
+            <ul className="flex flex-col gap-3 text-sm text-gray-500">
+              <li>
+                <a href="#" className="hover:text-gray-900">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-900">
+                  Technologies
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-900">
+                  Projects
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Company */}
+          <div>
+            <h4 className="text-xs font-semibold text-gray-900 tracking-wide mb-4">
+              COMPANY
+            </h4>
+            <ul className="flex flex-col gap-3 text-sm text-gray-500">
+              <li>
+                <a href="#" className="hover:text-gray-900">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-900">
+                  Contact
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-900">
+                  Careers
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h4 className="text-xs font-semibold text-gray-900 tracking-wide mb-4">
+              LEGAL
+            </h4>
+            <ul className="flex flex-col gap-3 text-sm text-gray-500">
+              <li>
+                <a href="#" className="hover:text-gray-900">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a href="#" className="hover:text-gray-900">
+                  Terms of Service
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="border-t border-gray-100 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-400">
+          <p>© 2026 Dev Stack. All rights reserved.</p>
+          <div className="flex gap-4">
+            <a href="#" className="hover:text-gray-600">
+              Privacy
+            </a>
+            <a href="#" className="hover:text-gray-600">
+              Terms
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

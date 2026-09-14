@@ -5,6 +5,7 @@ import TechnoItem from "./components/TechnoItem/TechnoItem";
 import Loading from "./components/TechnoItem/Loading";
 import type { TechnoTypes } from "./types/TechnoTypes";
 import TechnoHeading from "./components/TechnoHeading";
+import Footer from "./components/Footer";
 
 const getTechnoData = async (): Promise<TechnoTypes[]> => {
   const res = await fetch("/data.json");
@@ -27,6 +28,7 @@ function App() {
           </Suspense>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 }
